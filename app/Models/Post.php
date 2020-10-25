@@ -9,7 +9,7 @@ class Post extends Model
 {
 	public function topic()
 	{
-		return $this->belongsTo(Post::class);
+		return $this->belongsTo(Topic::class);
 	}
 
 	public function author()

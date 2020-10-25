@@ -5,7 +5,7 @@
         </router-link>
         <p class="mb-3">{{ post.lead }}</p>
         <div class="text-gray-600 text-sm text-gre">
-            By: {{ post.author.name }} - 3 Hours ago
+            By: <router-link :to="{name: 'author', params: {id: post.author.id}}">{{ post.author.name }}</router-link> - {{ post.created_at | timeago }}
         </div>
     </div>
 </template>

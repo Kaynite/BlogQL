@@ -25,6 +25,7 @@
                     id
                     title
                     lead
+                    created_at
                     author {
                         id
                         name
