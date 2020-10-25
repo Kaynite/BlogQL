@@ -8,6 +8,6 @@ class PostsController extends Controller
 {
 	public function FunctionName($value='')
 	{
-		Topic::get();
+		User::get();
 	}
 }
